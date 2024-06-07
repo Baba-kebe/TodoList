@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" style="background-color: #005599; color: white">
+            <h1>ToDo List</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <label for="tache"></label>
+            <input type="text" id="tache" placeholder="Ajouter une tache">
+            <button type="button" class="ui-btn-active" onclick="ajouterTache()">Ajouter</button>
+            <button type="button" onclick="reinitialiser()">
+                Reinitialiser
+            </button>
+            <div id="listTaches" hidden>
+                <h1 style="background-color: rgb(255,81,81); color: white; text-align: center">
+                    A faire
+                </h1>
+                <ul data-role="listview" id="todo" data-inset="true">
+                </ul>
+            </div>
+            <div id="completedTaches" hidden>
+                <h1 style="background-color: blue; color: white; text-align: center">
+                    Terminé
+                </h1>
+                <ul data-role="listview" id="completed" data-inset="true">
+
+                </ul>
+            </div>
+            </div>
+        <div data-role="footer" data-position="fixed" style="text-align: center;background-color: #005599; color: white">
+            Dev Mobile : 2024
+        </div>
+    </div>
+
+</body>
+</html>

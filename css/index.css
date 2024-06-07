@@ -1,0 +1,9 @@
+h1, input{
+    text-align: center;
+}
+input{
+    height: 40px;
+}
+.my-btn{
+    background-color: red;
+}
